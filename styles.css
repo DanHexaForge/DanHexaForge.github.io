@@ -190,7 +190,7 @@ h5,
   color: #fff;
 }
 #home {
-  min-height: calc(100vh - 120px); /* Adjust 120px to your navbar+footer height */
+  min-height: calc(100vh - 120px); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,7 +225,7 @@ section#hero {
   color: #fafafa;
   --color-accent: #8a2be2;
 }
-/* 1. Navbar always visible */
+
 .site_header {
   position: fixed;
   top: 0;
@@ -233,16 +233,16 @@ section#hero {
   width: 100%;
   z-index: 1000;
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); /* glass effect */
+  backdrop-filter: blur(10px);
   
 }
 
-/* Push page content below fixed header */
+
 body {
-  padding-top: 80px; /* adjust to header height */
+  padding-top: 100px; 
 }
 
-/* 2. Sections hidden by default except hero */
+
 section {
   display: none;
   position: fixed;
@@ -296,7 +296,7 @@ section#hero {
 }
 
 .about_img {
-  width: 300px;
+  width: 350px;
   height: 200px;
   object-fit: cover;
 }
@@ -348,6 +348,7 @@ textarea {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
+  caret-color: tomato;
 }
 
 textarea {
@@ -368,32 +369,31 @@ button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-/* Footer */
-/* 1. Footer fixed at bottom */
+
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(26, 26, 64, 0.9); /* same theme as header */
+  background: rgba(26, 26, 64, 0.9); 
   color: #fafafa;
   z-index: 999;
    -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); /* glass look */
+  backdrop-filter: blur(10px); 
  
   padding: var(--space-xs) var(--space-l);
   text-align: right;
 }
 
-/* Push main content up so footer doesn’t overlap */
+
 main {
-  padding-bottom: 80px; /* adjust to footer height */
+  padding-bottom: 80px; 
 }
 
-/* 2. Hero socials fixed */
+
 .hero_social {
   position: fixed;
-  bottom: 80px; /* sits above footer */
+  bottom: 80px; 
   left: 50%;
   transform: translateX(-50%);
   background: rgba(26, 26, 64, 0.6);
